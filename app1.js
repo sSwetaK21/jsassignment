@@ -60,3 +60,50 @@
 // }
 // fibo(1, 1, 1);
 
+
+// --------------Qst 6------------
+
+// Write a Javascript program to count the number of digits a given number has using recursion.
+
+
+// function numDig(num1,count ){
+//     if(num1>0){
+//         num1 = Math.floor(num1/10);
+//         count++;
+//         return numDig(num1 ,count);
+//     }
+//     console.log(count);
+// }
+// console.log(numDig(12456,0));
+
+
+// -----------qst 8---------
+
+// Convert a given decimal number to binary using recursion.
+
+// function decToBin(num){
+//     if(num == 0){
+//         num =0;
+//     } else {
+//         console.log(num .toString(2));
+//         return decToBin(num);
+
+//     }
+// }
+
+// console.log(decToBin(10));
+
+// ------Qst 9-------
+
+// Given a number n, print all the odd numbers from 1 to n using recursion.
+
+function odd(num, num2) {
+  if (num >= num2) {
+    if (num % 2 !== 0) {
+      console.log(i + " ODD");
+      return odd(num+1, num2);
+    }
+  }
+}
+
+console.log(odd(1, 7));
