@@ -1,5 +1,5 @@
 
-// Assignment questions here
+// Class  questions here
 
 // ------------Qst 1-------------
 
@@ -27,7 +27,7 @@
 //         return range(num+1, num2 );
 //     }
 // }
-// console.log( range(1,7) );
+//  range(1,7) ;
 
 
 // ------------Qst 3-----------
@@ -41,7 +41,7 @@
 //   }
 
 // }
-// console.log(range(5, 1));
+// range(5, 1);
 
 
 
@@ -66,15 +66,15 @@
 // Write a Javascript program to count the number of digits a given number has using recursion.
 
 
-// function numDig(num1,count ){
-//     if(num1>0){
-//         num1 = Math.floor(num1/10);
-//         count++;
-//         return numDig(num1 ,count);
-//     }
-//     console.log(count);
-// }
-// console.log(numDig(12456,0));
+function numDig(num1,count ){
+    if(num1>0){
+        num1 = Math.floor(num1/10);
+        count++;
+        return numDig(num1 ,count);
+    }
+    console.log(count);
+}
+numDig(12456,0);
 
 
 // -----------qst 8---------
@@ -82,7 +82,6 @@
 // Convert a given decimal number to binary using recursion.
 
 // let count =1;
-
 // function decToBin(num){
   
 //    if(count==1){
@@ -100,15 +99,15 @@
 // Given a number n, print all the odd numbers from 1 to n using recursion.
 
 // function odd(num, num2) {
-//   if (num >= num2) {
+//   if (num <= num2) {
 //     if (num % 2 !== 0) {
-//       console.log(i + " ODD");
-//       return odd(num+1, num2);
+//       console.log(num );
 //     }
+//       return odd(num+1, num2);
 //   }
 // }
 
-// console.log(odd(1, 7));
+// odd(1, 7);
 
 
 // -----------Qst 10------------
@@ -131,23 +130,23 @@
 
 
 
-function reverseNumber(num) {
-    let rev =0;
-    let temp = num;
-    if(temp>0){
-        let digit = Math.floor(temp % 10);
-        rev = rev*10 + digit;
-        temp = Math.floor(temp / 10);
-        return reverseNumber(temp);
-    }
-    if(num == rev){
-        console.log("It is Palindrome number");
-    } else{
-        console.log("It is not a Palindrome Number");
-    }
-}
+// function reverseNumber(num) {
+//     let rev =0;
+//     let temp = num;
+//     if(temp>0){
+//         let digit = Math.floor(temp % 10);
+//         rev = rev*10 + digit;
+//         temp = Math.floor(temp / 10);
+//         return reverseNumber(temp);
+//     }
+//     if(num == rev){
+//         console.log("It is Palindrome number");
+//     } else{
+//         console.log("It is not a Palindrome Number");
+//     }
+// }
 
-reverseNumber(1221);
+// reverseNumber(1221);
 
 
 //-----------Qst 12--------------
