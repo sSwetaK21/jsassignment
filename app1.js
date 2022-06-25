@@ -115,3 +115,13 @@
 
 // Given a number n, print all the even numbers from n to 1 using recursion.
 
+// function evenNumbers( num1, num2) {
+//     if (num2 >= num1 ) {
+//         if ( num2 % 2 == 0 ) {
+//             console.log( num2 );
+//         }
+//         return evenNumbers( num1  , num2 - 1);
+//     }
+// }
+
+// console.log(evenNumbers(1,9));
