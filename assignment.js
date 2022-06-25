@@ -9,7 +9,7 @@
 //         return rangeOfNum(num1+1, num2 );
 //     }
 // }
-// console.log( rangeOfNum(1,10) );
+//  rangeOfNum(1,10) ;
 
 //-----------------Qst 2-----------
 
@@ -69,18 +69,83 @@
 
 
 //-----------Qst 6 -------------------------
-
 // Print sum of all the numbers in the given range
+
 // let sum = 0;
 // function sumOfNum(num1, num2) {
-//     if(num1 < num2){
-//          sum = num1 +num2;
-//         return sumOfNum(num1 , num2, sum);
+//     if(num1 <= num2){
+
+//         sum += num1;
+//         return sumOfNum(num1 +1 , num2);
 //     }
 //     console.log(sum);
-    
 // }
 
-// console.log(sumOfNum(2, 8));
+// sumOfNum(2, 8);
 
 //-------------------QSt 7------------
+// Print the product of all the numbers in given range
+
+//  let product = 1;
+//  function productOfNum(num, range) {
+//     if(num <=range){
+//         product *= num;
+//         return productOfNum(num + 1, range);
+
+//     }
+//     console.log(product);
+// }
+
+// productOfNum(2,7)
+
+
+//----------------QSt 8---------------
+// Write the recursive function to check whether a given number is prime or not.
+
+// let isprime = 0;
+// function isprimeNumber(number) {
+//     if (number <=2) {
+//         if (number % 2 == 0) {
+//             isprime=1;
+//         }
+//     }
+
+//     return isprimeNumber(number + 1);
+
+// }
+
+// isprimeNumber(12);
+
+//------------Qsst 9------------------
+// Print sum of all the first 10 even numbers
+
+// let sum = 0;
+// function evenSum(num) {
+//     if(num <= 10){
+//         if(num % 2 == 0){
+//             sum += num;
+
+//         }
+//         return evenSum(num +1);
+//     }
+//     console.log(sum);
+
+// }
+
+// evenSum(1);
+
+//---------------Qst 10------------
+// Write a recursive program to find the power of given number and exponent. (without using Math.pow and exponent operator(**))
+
+let pow = 1;
+
+function powerOfNum(num1, exponent) {
+
+    if (exponent === 0) {
+        return 1;
+    } else {
+        return num1 * powerOfNum(num1, exponent - 1);
+    }
+
+}
+console.log(powerOfNum(2, 5));
