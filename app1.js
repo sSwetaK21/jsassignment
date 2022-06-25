@@ -125,3 +125,43 @@
 // }
 
 // console.log(evenNumbers(1,9));
+
+//-----------Qst 11------------
+// Write a javascript program to check whether the given string is palindrome or not using recursion
+
+
+
+function reverseNumber(num) {
+    let rev =0;
+    let temp = num;
+    if(temp>0){
+        let digit = Math.floor(temp % 10);
+        rev = rev*10 + digit;
+        temp = Math.floor(temp / 10);
+        return reverseNumber(temp);
+    }
+    if(num == rev){
+        console.log("It is Palindrome number");
+    } else{
+        console.log("It is not a Palindrome Number");
+    }
+}
+
+reverseNumber(1221);
+
+
+//-----------Qst 12--------------
+// Given a number n, find 2^n using recursion
+
+// let pow = 1;
+
+// function powerOfNum(num1, exponent) {
+
+//     if (exponent === 0) {
+//         return 1;
+//     } else {
+//         return num1 * powerOfNum(num1, exponent - 1);
+//     }
+
+// }
+// console.log(powerOfNum(2, 5));
