@@ -102,19 +102,25 @@
 //----------------QSt 8---------------
 // Write the recursive function to check whether a given number is prime or not.
 
+// let mul = 2;
 // let isprime = 0;
 // function isprimeNumber(number) {
-//     if (number <=2) {
-//         if (number % 2 == 0) {
+//     if (mul <= number) {
+//         if (number % mul == 0) {
 //             isprime=1;
+//             mul++;
+//             return isprimeNumber(number);
+//         }
+//         if(isprime == 0){
+//             console.log("Yes It is Prime number");
+//         } else{
+//             console.log("No It is not a  Prime number");
 //         }
 //     }
 
-//     return isprimeNumber(number + 1);
-
 // }
 
-// isprimeNumber(12);
+// isprimeNumber(13);
 
 //------------Qsst 9------------------
 // Print sum of all the first 10 even numbers
@@ -137,15 +143,15 @@
 //---------------Qst 10------------
 // Write a recursive program to find the power of given number and exponent. (without using Math.pow and exponent operator(**))
 
-let pow = 1;
+// let pow = 1;
 
-function powerOfNum(num1, exponent) {
+// function powerOfNum(num1, exponent) {
 
-    if (exponent === 0) {
-        return 1;
-    } else {
-        return num1 * powerOfNum(num1, exponent - 1);
-    }
+//     if (exponent === 0) {
+//         return 1;
+//     } else {
+//         return num1 * powerOfNum(num1, exponent - 1);
+//     }
 
-}
-console.log(powerOfNum(2, 5));
+// }
+// console.log(powerOfNum(2, 5));
