@@ -1,5 +1,5 @@
 #Output of assignment
-<img src="images/Assign1.png" alt="Assignment">
+<img src="images/Assign1.jpg" alt="Assignment">
 <img src="images/Asssign2.png" alt="Assignment">
 <img src="images/Assign3.png" alt="Assignment">
 <img src="images/Assign4.png" alt="Assignment">
